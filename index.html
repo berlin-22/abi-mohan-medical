@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ABI Mohan Medical — Better Health Starts Here | 24/7 Medical Center &amp; Pharmacy</title>
+  <meta name="description" content="ABI Mohan Medical: 24/7 healthcare center and pharmacy in Mathur, Virudhachalam. Personalized care, certified medicines, and emergency prescriptions. Call 080566 68839.">
+  <meta name="theme-color" content="#121517">
+
+  <!-- Typography: Plus Jakarta Sans + Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Dynamic Top Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- HERO MASTER CONTAINER (Left-Aligned Text + Unobstructed Right Image) -->
+  <header class="hero-master" id="heroMaster">
+    <!-- Background Image with Gradient Scrim Focused on Left Text -->
+    <div class="hero-bg-media">
+      <img src="assets/hero_bg.jpg" alt="Better health and medical care at ABI Mohan Medical" class="hero-bg-img" id="heroBgImg">
+      <div class="hero-overlay-scrim"></div>
+    </div>
+
+    <!-- Floating Top Navigation Bar -->
+    <nav class="hero-nav-bar" aria-label="Main Navigation">
+      <!-- Brand Logo (4-petal medical clover icon) -->
+      <a href="#" class="nav-brand" aria-label="ABI Mohan Medical Home">
+        <svg class="brand-clover-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="9" r="6" fill="#FFFFFF"/>
+          <circle cx="16" cy="23" r="6" fill="#FFFFFF"/>
+          <circle cx="9" cy="16" r="6" fill="#FFFFFF"/>
+          <circle cx="23" cy="16" r="6" fill="#FFFFFF"/>
+          <circle cx="16" cy="16" r="3.5" fill="#1C1E20"/>
+        </svg>
+        <span class="brand-logo-text">ABI MOHAN</span>
+      </a>
+
+      <!-- Centered Frosted Glass Pill Menu (Desktop) -->
+      <div class="nav-frosted-pill">
+        <a href="#services" class="pill-link">Services</a>
+        <a href="#dispensary" class="pill-link">Dispensary</a>
+        <a href="#reviews" class="pill-link">Reviews</a>
+        <a href="#location" class="pill-link">Contact</a>
+      </div>
+
+      <!-- Right CTAs -->
+      <div class="nav-auth-group">
+        <a href="tel:+918056668839" class="nav-btn-login" title="Call Emergency Line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Call Line</span>
+        </a>
+        <button type="button" class="nav-btn-signup" id="navRefillBtn">Refill Now</button>
+      </div>
+    </nav>
+
+    <!-- Left-Aligned Hero Content (Image fully visible on right) -->
+    <div class="hero-left-container">
+      <div class="hero-content-box" id="heroContentBox">
+        <div class="hero-pill-badge" id="heroLiveBadge">
+          <span class="pulse-emerald-dot"></span>
+          <span id="heroLiveStatusText">Mathur &bull; Open 24 Hours</span>
+        </div>
+
+        <h1 class="hero-main-title">
+          Better Health<br>
+          Starts Here
+        </h1>
+
+        <p class="hero-description-text">
+          Personalized care, certified doctors, and secure prescriptions—all in one trusted platform for your everyday healthcare needs in Mathur.
+        </p>
+
+        <div class="hero-button-row">
+          <a href="#dispensary" class="btn-pill-white" id="heroShopBtn">
+            Shop Medications
+          </a>
+          <a href="tel:+918056668839" class="btn-pill-translucent" id="heroHowBtn">
+            <span class="play-triangle">▶</span>
+            <span>Emergency Care</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Four Floating Metric Cards (2x2 on Mobile Android, 4x1 on Desktop) -->
+    <div class="hero-dock-metrics" id="heroDockMetrics">
+      <div class="dock-card">
+        <div class="dock-icon-circle icon-bg-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#25603A" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="dock-card-text">
+          <span class="dock-card-number" data-target="1000" data-format="k">1k</span>
+          <span class="dock-card-label">Happy Patients</span>
+        </div>
+      </div>
+
+      <div class="dock-card">
+        <div class="dock-icon-circle icon-bg-yellow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#875300" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="dock-card-text">
+          <span class="dock-card-number" data-target="5.0" data-format="rating">5.0/5</span>
+          <span class="dock-card-label">Customer Rating</span>
+        </div>
+      </div>
+
+      <div class="dock-card">
+        <div class="dock-icon-circle icon-bg-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#175078" stroke-width="2" stroke-linecap="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+        </div>
+        <div class="dock-card-text">
+          <span class="dock-card-number" data-target="100" data-format="plus">100+</span>
+          <span class="dock-card-label">Quality Products</span>
+        </div>
+      </div>
+
+      <div class="dock-card">
+        <div class="dock-icon-circle icon-bg-purple">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#52327D" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="dock-card-text">
+          <span class="dock-card-number live-pulse-text">24/7</span>
+          <span class="dock-card-label">Emergency Care</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BODY SECTIONS -->
+  <main class="content-body-wrap">
+    <!-- SECTION 1: DISPENSARY & PHARMACY COUNTER (Split with Real Photo) -->
+    <section class="page-section" id="dispensary">
+      <div class="container-standard">
+        <div class="section-title-center">
+          <span class="sub-kicker">DISPENSARY &amp; PHARMACY</span>
+          <h2 class="title-primary">Instant medication lookup &amp; WhatsApp refills</h2>
+          <p class="lead-text">Search for required tablets, syrups, or inhalers. Transmit directly to our 24/7 counter for immediate preparation.</p>
+        </div>
+
+        <div class="dispensary-split-showcase">
+          <!-- Left Column: Search & Interactive Order -->
+          <div class="dispensary-control-card">
+            <h3 class="card-inner-title">Find Prescriptions &amp; Essentials</h3>
+            <p class="card-inner-sub">Tap quick categories or type custom brand / generic names:</p>
+
+            <div class="chip-row-modern" id="quickChipsRow">
+              <button type="button" class="chip-item active" data-med="Paracetamol & Cold Relief">Fever &amp; Cold</button>
+              <button type="button" class="chip-item" data-med="Insulin Glargine & Sugar Strips">Insulin &amp; Diabetes</button>
+              <button type="button" class="chip-item" data-med="Asthma Inhaler & Salbutamol">Inhaler / Asthma</button>
+              <button type="button" class="chip-item" data-med="Blood Pressure Amlodipine Tablets">BP Medication</button>
+              <button type="button" class="chip-item" data-med="First Aid Bandage & Antiseptic">First Aid Supplies</button>
+            </div>
+
+            <div class="search-bar-unified">
+              <input 
+                type="text" 
+                id="searchMedInput" 
+                class="unified-input" 
+                value="Paracetamol & Cold Relief" 
+                placeholder="Enter tablet name or prescription requirement..."
+                aria-label="Medication name"
+              >
+              <button type="button" class="btn-unified-send" id="btnSendWhatsapp">
+                <span>Order on WhatsApp</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+
+            <div class="counter-status-strip">
+              <div class="live-dot-green"></div>
+              <span>Emergency Dispensary Active &bull; Cold-chain temperature monitored</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Photo Card of Pharmacy -->
+          <div class="dispensary-photo-card">
+            <img src="assets/refill_counter.jpg" alt="Certified pharmacy dispensing counter and medicine packs" class="section-photo-img">
+            <div class="photo-card-overlay">
+              <span class="photo-overlay-tag">VERIFIED BATCH DISPENSARY</span>
+              <p class="photo-overlay-text">100% Genuine Certified Pharmaceuticals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SERVICES WITH HIGH-RESOLUTION CLINICAL IMAGERY -->
+    <section class="page-section section-bg-light" id="services">
+      <div class="container-standard">
+        <div class="section-title-center">
+          <span class="sub-kicker">OUR CAPABILITIES</span>
+          <h2 class="title-primary">Certified care around the clock</h2>
+          <p class="lead-text">Comprehensive clinical support, genuine pharmaceutical stock, and local village accessibility.</p>
+        </div>
+
+        <div class="grid-services-visual">
+          <!-- Service Card 1: 24/7 Dispensary -->
+          <div class="service-visual-card">
+            <div class="service-img-wrapper">
+              <img src="assets/pharmacy.jpg" alt="24 Hour emergency dispensary shelves" class="service-card-img">
+              <span class="service-badge-pill">24/7 Open</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="card-head">Round-the-Clock Dispensary</h3>
+              <p class="card-copy">Open day and night. Full inventory of fever medicines, nebulizer fluids, cardiac medications, and cold-chain insulins.</p>
+            </div>
+          </div>
+
+          <!-- Service Card 2: Consultation -->
+          <div class="service-visual-card">
+            <div class="service-img-wrapper">
+              <img src="assets/consultation.jpg" alt="Physician consultation desk" class="service-card-img">
+              <span class="service-badge-pill">Consultation</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="card-head">Physician Care &amp; First Aid</h3>
+              <p class="card-copy">Compassionate diagnosis for seasonal illnesses, dressing of minor injuries, health assessments, and daily primary healthcare guidance.</p>
+            </div>
+          </div>
+
+          <!-- Service Card 3: Diagnostic Testing -->
+          <div class="service-visual-card">
+            <div class="service-img-wrapper">
+              <img src="assets/diagnostics.jpg" alt="Blood pressure monitor and blood glucose meter" class="service-card-img">
+              <span class="service-badge-pill">Diagnostics</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="card-head">Vital Parameter Checks</h3>
+              <p class="card-copy">Instant walk-in testing for Blood Pressure (BP), Capillary Blood Sugar (RBS), and pulse oximeter saturation without prior booking.</p>
+            </div>
+          </div>
+
+          <!-- Service Card 4: Prescription Refill -->
+          <div class="service-visual-card">
+            <div class="service-img-wrapper">
+              <img src="assets/refill_counter.jpg" alt="Prescription packaging counter" class="service-card-img">
+              <span class="service-badge-pill">Digital Refill</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="card-head">Prescription Photo Orders</h3>
+              <p class="card-copy">Snap a clear photo of your doctor's slip. We verify batch numbers and pack your medicines for instant counter pickup or village delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PATIENT REVIEWS (Real Verified Google Maps Reviews) -->
+    <section class="page-section" id="reviews">
+      <div class="container-standard">
+        <div class="section-title-center">
+          <span class="sub-kicker">COMMUNITY TESTIMONIALS</span>
+          <h2 class="title-primary">Verified Google Maps feedback</h2>
+          <p class="lead-text">Real words from patients in Mathur and Virudhachalam.</p>
+        </div>
+
+        <div class="grid-reviews-dual">
+          <article class="review-box-clean">
+            <div class="review-top-meta">
+              <span class="reviewer-initial">G</span>
+              <div>
+                <h4 class="reviewer-title">gunabalan guna</h4>
+                <span class="reviewer-sub">Verified Patient Review</span>
+              </div>
+              <span class="rating-badge-stars">★★★★★ 5.0</span>
+            </div>
+            <blockquote class="review-quote-text">
+              &ldquo;actually his treatment pretty good 👍&rdquo;
+            </blockquote>
+          </article>
+
+          <article class="review-box-clean">
+            <div class="review-top-meta">
+              <span class="reviewer-initial initial-blue">V</span>
+              <div>
+                <h4 class="reviewer-title">Vanitha Vani</h4>
+                <span class="reviewer-sub">Verified Patient Review</span>
+              </div>
+              <span class="rating-badge-stars">★★★★★ 5.0</span>
+            </div>
+            <blockquote class="review-quote-text">
+              &ldquo;Good service&rdquo;
+            </blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: LOCATION & DIRECTIONS WITH CLINIC PHOTO -->
+    <section class="page-section section-bg-light" id="location">
+      <div class="container-standard">
+        <div class="location-banner-clean">
+          <div class="location-copy-col">
+            <span class="sub-kicker">MATHUR CENTER</span>
+            <h2 class="title-primary" style="margin-bottom: 0.5rem;">20, Main road street, Mathur</h2>
+            <p class="lead-text" style="margin-bottom: 1.5rem;">Virudhachalam, Tamil Nadu 606104 &bull; Open 24 Hours</p>
+
+            <div class="contact-rows-clean">
+              <div class="contact-row-item">
+                <span class="contact-lbl">Plus Code</span>
+                <span class="contact-val">
+                  <code>J83M+QJ Mathur, Tamil Nadu</code>
+                  <button type="button" class="btn-copy-mini" id="btnCopyCode">Copy</button>
+                </span>
+              </div>
+              <div class="contact-row-item">
+                <span class="contact-lbl">Telephone</span>
+                <span class="contact-val"><a href="tel:+918056668839" class="phone-link-bold">080566 68839</a></span>
+              </div>
+              <div class="contact-row-item">
+                <span class="contact-lbl">WhatsApp</span>
+                <span class="contact-val"><a href="https://wa.me/918056668839" target="_blank" rel="noopener">+91 80566 68839</a></span>
+              </div>
+            </div>
+
+            <div class="location-btn-row">
+              <a href="https://maps.google.com/?q=20,+Main+road+street,+Mathur,+Virudhachalam,+Tamil+Nadu+606104" target="_blank" rel="noopener noreferrer" class="btn-pill-dark">
+                Google Maps Directions &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="location-photo-col">
+            <img src="assets/pharmacy.jpg" alt="ABI Mohan Medical clinic and storefront in Mathur" class="location-store-img">
+            <div class="location-photo-badge">
+              <span>Main Road Landmark &bull; Always Open</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CLEAN COMPACT FOOTER -->
+  <footer class="footer-clean">
+    <div class="container-standard footer-flex">
+      <div class="footer-brand-side">
+        <span class="brand-logo-text" style="color: #111;">ABI MOHAN MEDICAL</span>
+        <p class="footer-copy-muted">Managed &amp; Owned by Vanitha Prakashvel &bull; 20, Main road street, Mathur, Virudhachalam, Tamil Nadu 606104 &bull; 24 Hours Emergency Healthcare</p>
+      </div>
+      <div class="footer-meta-side">
+        <a href="tel:+918056668839" class="footer-link">Emergency: 080566 68839</a>
+        <span class="footer-copy-muted">&copy; 2026 ABI Mohan Medical Center</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- REFILL DIALOG MODAL -->
+  <dialog class="refill-dialog" id="refillDialog">
+    <div class="dialog-inner-card">
+      <div class="dialog-title-bar">
+        <h3>Prescription Refill Request</h3>
+        <button type="button" class="dialog-close-btn" id="closeRefillModal">&times;</button>
+      </div>
+
+      <form id="refillForm" class="dialog-form-fields">
+        <div class="field-item">
+          <label for="modalPatientName">Patient Name</label>
+          <input type="text" id="modalPatientName" required placeholder="e.g. Gunabalan, Mathur" class="dialog-input">
+        </div>
+        <div class="field-item">
+          <label for="modalPatientPhone">Phone Number</label>
+          <input type="tel" id="modalPatientPhone" required placeholder="e.g. 080566 68839" class="dialog-input">
+        </div>
+        <div class="field-item">
+          <label for="modalMedDetails">Medicines / Symptoms</label>
+          <textarea id="modalMedDetails" rows="3" required placeholder="List medicines or health need..." class="dialog-input"></textarea>
+        </div>
+        <div class="field-item">
+          <label>Attach Prescription Photo (Optional)</label>
+          <input type="file" id="modalFileInput" accept="image/*" class="dialog-file-input">
+        </div>
+        <button type="submit" class="btn-pill-dark btn-full-width">
+          Send to WhatsApp Counter
+        </button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-float" id="toastFloat" role="status" aria-live="polite">
+    <span id="toastMsgText">Notification</span>
+  </div>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button type="button" class="btn-back-to-top" id="btnBackToTop" aria-label="Scroll back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- FLOATING CHAT LAUNCHER WIDGET -->
+  <button type="button" class="btn-chat-launcher" id="btnChatLauncher" aria-label="Open 24/7 AI Medical Assistant" title="24/7 AI மருத்துவ உதவியாளர்">
+    <span class="chat-launcher-pulse"></span>
+    <svg class="chat-launcher-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+    <span class="chat-launcher-label">மோகன் AI உதவி</span>
+  </button>
+
+  <!-- 24/7 TAMIL RAG CHAT WIDGET WINDOW -->
+  <aside class="chat-widget-window" id="chatWidgetWindow" role="dialog" aria-labelledby="chatHeaderTitle" aria-hidden="true">
+    <div class="chat-widget-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar-clover">
+          <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="9" r="6" fill="#10B981"/>
+            <circle cx="16" cy="23" r="6" fill="#10B981"/>
+            <circle cx="9" cy="16" r="6" fill="#10B981"/>
+            <circle cx="23" cy="16" r="6" fill="#10B981"/>
+            <circle cx="16" cy="16" r="3.5" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="chat-header-title" id="chatHeaderTitle">ABI Mohan AI Assistant</h3>
+          <span class="chat-header-sub">வனிதா பிரகாஷ்வேல் நிர்வாகம் &bull; 24/7 நேரலை</span>
+        </div>
+      </div>
+      <button type="button" class="chat-btn-close" id="btnCloseChat" aria-label="Close chat window">&times;</button>
+    </div>
+
+    <!-- Quick Tamil Question Chips -->
+    <div class="chat-quick-chips" id="chatQuickChips">
+      <button type="button" class="chat-chip-btn" data-query="கடை இப்போது திறந்திருக்கிறதா?">🕒 திறந்திருக்கிறதா?</button>
+      <button type="button" class="chat-chip-btn" data-query="கடையின் உரிமையாளர் மற்றும் முகவரி என்ன?">📍 முகவரி &amp; உரிமையாளர்</button>
+      <button type="button" class="chat-chip-btn" data-query="வாட்ஸ்அப் மூலம் மருந்து ஆர்டர் செய்வது எப்படி?">💊 மருந்து ஆர்டர்</button>
+      <button type="button" class="chat-chip-btn" data-query="பிபி மற்றும் சுகர் பரிசோதனை செய்யலாமா?">🩺 BP &amp; Sugar பரிசோதனை</button>
+    </div>
+
+    <!-- Messages Flow Container -->
+    <div class="chat-messages-container" id="chatMessages">
+      <div class="chat-bubble chat-bubble-bot">
+        <div class="bubble-content">
+          வணக்கம்! நான் <strong>ABI Mohan Medical</strong>-ன் அதிகாரப்பூர்வ AI உதவியாளர். 
+          எங்கள் மருத்துவ மையம் மற்றும் மருந்தகம் <strong>திருமதி. வனிதா பிரகாஷ்வேல்</strong> அவர்களின் நிர்வாகத்தில் மாத்தூரில் 24 மணி நேரமும் செயல்படுகிறது. 
+          உங்களுக்கு மருந்து விபரம், அவசர சேவை, அல்லது முகவரி பற்றி என்ன உதவி வேண்டும்?
+        </div>
+        <span class="bubble-time">24/7 நேரலை உதவியாளர்</span>
+      </div>
+    </div>
+
+    <!-- Input Box -->
+    <form class="chat-input-row" id="chatInputForm">
+      <input 
+        type="text" 
+        id="chatTextInput" 
+        class="chat-text-input" 
+        placeholder="உங்கள் கேள்வியை தமிழில் கேட்கவும்..." 
+        autocomplete="off"
+        required
+      >
+      <button type="submit" class="chat-btn-send" id="btnChatSend" aria-label="Send message">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </form>
+  </aside>
+
+  <!-- Local GSAP & ScrollTrigger Engine -->
+  <script src="gsap.min.js"></script>
+  <script src="ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

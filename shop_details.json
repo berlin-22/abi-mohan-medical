@@ -1,0 +1,75 @@
+{
+  "business": {
+    "name": "ABI Mohan Medical",
+    "type": "24/7 Medical Center & Pharmacy",
+    "managed_and_owned_by": "Vanitha Prakashvel",
+    "rating": "5.0 / 5.0 (Google Maps Verified)",
+    "address": "20, Main road street, Mathur, Virudhachalam, Tamil Nadu 606104",
+    "plus_code": "J83M+QJ Mathur, Tamil Nadu",
+    "landmark": "Main Road Street, Mathur village, Virudhachalam",
+    "phone": "080566 68839",
+    "whatsapp": "+91 80566 68839",
+    "hours": "Open 24 Hours / 7 Days a Week (Day and Night Emergency Service)",
+    "delivery": "Counter pickup and Mathur village doorstep delivery available via WhatsApp"
+  },
+  "ownership": {
+    "owner_name": "Vanitha Prakashvel",
+    "qualification": "D.Pharm (Diploma in Pharmacy)",
+    "is_doctor": false,
+    "role": "Owner, Pharmacist & Manager of ABI Mohan Medical",
+    "background": "Vanitha Prakashvel is not a doctor. She is a D.Pharm graduate with extensive prior hands-on working experience in pharmacies. She now owns and manages this new independent pharmacy, ABI Mohan Medical.",
+    "note": "The pharmacy is proudly owned and managed by Vanitha Prakashvel (D.Pharm)."
+  },
+  "services": [
+    {
+      "name": "24/7 Emergency Dispensary & Pharmacy",
+      "details": "Full stock of genuine certified pharmaceuticals: fever, cough, antibiotics, cardiac medicines, blood pressure tablets, asthma inhalers, and cold-chain temperature-monitored insulins."
+    },
+    {
+      "name": "Physician Care & First Aid",
+      "details": "Walk-in consultation for seasonal illnesses, fever, wound cleaning and antiseptic dressing, primary healthcare diagnosis."
+    },
+    {
+      "name": "Vital Parameter Diagnostics",
+      "details": "Walk-in instant testing for Blood Pressure (BP), Random Blood Sugar (RBS glucometer), and Pulse Oximeter saturation without appointment."
+    },
+    {
+      "name": "WhatsApp Prescription Refill",
+      "details": "Patients can send a clear photo of their doctor's prescription slip to +91 80566 68839 for quick verification and counter packaging."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Who owns and manages ABI Mohan Medical?",
+      "answer": "ABI Mohan Medical is owned and managed by Vanitha Prakashvel. She is a D.Pharm qualified pharmacist with prior working experience in pharmacy, and now owns this new medical store."
+    },
+    {
+      "question": "Is the pharmacy open right now at night?",
+      "answer": "Yes, ABI Mohan Medical is open 24 hours continuously, including late night and holidays."
+    },
+    {
+      "question": "How can I order medicines on WhatsApp?",
+      "answer": "Send your medicine list or prescription picture to WhatsApp at +91 80566 68839. We will confirm price and pack it for collection."
+    },
+    {
+      "question": "What is the exact address?",
+      "answer": "20, Main road street, Mathur, Virudhachalam, Tamil Nadu 606104. Google Plus Code: J83M+QJ Mathur."
+    },
+    {
+      "question": "What is the emergency contact number?",
+      "answer": "Call 080566 68839 anytime 24/7."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "gunabalan guna",
+      "rating": 5,
+      "review": "actually his treatment pretty good 👍"
+    },
+    {
+      "author": "Vanitha Vani",
+      "rating": 5,
+      "review": "Good service"
+    }
+  ]
+}
