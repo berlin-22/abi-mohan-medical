@@ -1,7 +1,9 @@
-from http.server import BaseHTTPRequestHandler
+import http.server
 import json
 import os
 import requests
+
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def _load_env():
     for candidate in [".env", os.path.join(os.path.dirname(__file__), ".env"), os.path.join(os.path.dirname(__file__), "..", ".env")]:
@@ -84,7 +86,10 @@ def generate_dynamic_fallback(query):
     else:
         return f"வணக்கம்! ABI Mohan Medical (உரிமையாளர்: வனிதா பிரகாஷ்வேல்) மாத்தூரில் 24 மணி நேரமும் செயல்படுகிறது. மேலும் தகவல்களுக்கு எங்களை {phone} என்ற எண்ணில் அழைக்கலாம்."
 
-class handler(BaseHTTPRequestHandler):
+class handler(http.server.SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, directory=ROOT_DIR, **kwargs)
+
     def end_headers(self):
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
@@ -96,10 +101,13 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
-        self.send_response(200)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.end_headers()
-        self.wfile.write(json.dumps({"status": "ok", "service": "ABI Mohan Medical Chatbot"}).encode("utf-8"))
+        if self.path.startswith("/api/chat"):
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "ok", "service": "ABI Mohan Medical Chatbot"}).encode("utf-8"))
+            return
+        super().do_GET()
 
     def do_POST(self):
         content_length = int(self.headers.get("Content-Length", 0))
