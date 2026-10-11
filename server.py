@@ -199,6 +199,9 @@ def generate_dynamic_fallback(query):
 class ThreadingHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
     daemon_threads = True
 
+# Export handler for Vercel detector compatibility
+handler = CustomHTTPHandler
+
 if __name__ == "__main__":
     os.chdir(BASE_DIR)
     with ThreadingHTTPServer(("", PORT), CustomHTTPHandler) as httpd:
